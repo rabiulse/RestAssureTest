@@ -18,6 +18,7 @@ public class restAssuredTest {
 				.when().get("https://reqres.in/api/users/2")
 
 				.then().statusCode(200);
+		
 
 	}
 
