@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RabiulUzzaman1.restassuredone.basicAuth">
+      <class name="herokuapp.getSpecificIdDetails">
         <methods>
-          <include name="authTest"/>
+          <include name="getspecificIddetails"/>
         </methods>
-      </class> <!-- RabiulUzzaman1.restassuredone.basicAuth -->
+      </class> <!-- herokuapp.getSpecificIdDetails -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Get resposne suucessfully:]]>
+    </line>
+    <line>
+      <![CDATA[Get resposne code:200]]>
+    </line>
+    <line>
+      <![CDATA[firstname:Josh]]>
+    </line>
+    <line>
+      <![CDATA[firstname:Allen]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-04-20T23:30:22 IST" name="Default suite" finished-at="2024-04-20T23:30:24 IST" duration-ms="1897">
+  <suite started-at="2024-05-23T09:20:40 IST" name="Default suite" finished-at="2024-05-23T09:20:44 IST" duration-ms="3837">
     <groups>
     </groups>
-    <test started-at="2024-04-20T23:30:22 IST" name="Default test" finished-at="2024-04-20T23:30:24 IST" duration-ms="1897">
-      <class name="RabiulUzzaman1.restassuredone.basicAuth">
-        <test-method signature="authTest()[pri:0, instance:RabiulUzzaman1.restassuredone.basicAuth@6221a451]" started-at="2024-04-20T23:30:22 IST" name="authTest" finished-at="2024-04-20T23:30:24 IST" duration-ms="1838" status="PASS">
+    <test started-at="2024-05-23T09:20:40 IST" name="Default test" finished-at="2024-05-23T09:20:44 IST" duration-ms="3837">
+      <class name="herokuapp.getSpecificIdDetails">
+        <test-method signature="getspecificIddetails()[pri:0, instance:herokuapp.getSpecificIdDetails@2e6a8155]" started-at="2024-05-23T09:20:40 IST" name="getspecificIddetails" finished-at="2024-05-23T09:20:44 IST" duration-ms="3799" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Get resposne suucessfully:]]>
+            </line>
+            <line>
+              <![CDATA[Get resposne code:200]]>
+            </line>
+            <line>
+              <![CDATA[firstname:Josh]]>
+            </line>
+            <line>
+              <![CDATA[firstname:Allen]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- authTest -->
-      </class> <!-- RabiulUzzaman1.restassuredone.basicAuth -->
+        </test-method> <!-- getspecificIddetails -->
+      </class> <!-- herokuapp.getSpecificIdDetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
