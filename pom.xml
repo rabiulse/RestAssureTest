@@ -26,6 +26,14 @@
       <scope>test</scope>
     </dependency>
     
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20240303</version>
+</dependency>
+
+    
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -42,13 +50,13 @@
     <groupId>io.rest-assured</groupId>
     <artifactId>rest-assured</artifactId>
     <version>5.4.0</version>
-    <scope>test</scope>
+
 </dependency>
 <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>json-path</artifactId>
       <version>5.4.0</version>
-      <scope>test</scope>
+ 
 </dependency>
 
 <dependency>

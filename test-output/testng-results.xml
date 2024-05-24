@@ -2,40 +2,34 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Get resposne suucessfully:]]>
-    </line>
-    <line>
       <![CDATA[Get resposne code:200]]>
     </line>
     <line>
-      <![CDATA[firstname:Josh]]>
+      <![CDATA[Delete  resposne code:io.restassured.internal.RestAssuredResponseImpl@2921199d]]>
     </line>
     <line>
-      <![CDATA[firstname:Allen]]>
+      <![CDATA[statusline:HTTP/1.1 201 Created]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-05-23T09:20:40 IST" name="Default suite" finished-at="2024-05-23T09:20:44 IST" duration-ms="3837">
+  <suite started-at="2024-05-24T23:09:28 IST" name="Default suite" finished-at="2024-05-24T23:09:34 IST" duration-ms="6085">
     <groups>
     </groups>
-    <test started-at="2024-05-23T09:20:40 IST" name="Default test" finished-at="2024-05-23T09:20:44 IST" duration-ms="3837">
-      <class name="herokuapp.getSpecificIdDetails">
-        <test-method signature="getspecificIddetails()[pri:0, instance:herokuapp.getSpecificIdDetails@2e6a8155]" started-at="2024-05-23T09:20:40 IST" name="getspecificIddetails" finished-at="2024-05-23T09:20:44 IST" duration-ms="3799" status="PASS">
+    <test started-at="2024-05-24T23:09:28 IST" name="Default test" finished-at="2024-05-24T23:09:34 IST" duration-ms="6085">
+      <class name="herokuapp.deleteBookingId">
+        <test-method signature="deleteBookingIdTest()[pri:0, instance:herokuapp.deleteBookingId@f09733f]" started-at="2024-05-24T23:09:28 IST" name="deleteBookingIdTest" finished-at="2024-05-24T23:09:34 IST" duration-ms="6040" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Get resposne suucessfully:]]>
-            </line>
             <line>
               <![CDATA[Get resposne code:200]]>
             </line>
             <line>
-              <![CDATA[firstname:Josh]]>
+              <![CDATA[Delete  resposne code:io.restassured.internal.RestAssuredResponseImpl@2921199d]]>
             </line>
             <line>
-              <![CDATA[firstname:Allen]]>
+              <![CDATA[statusline:HTTP/1.1 201 Created]]>
             </line>
           </reporter-output>
-        </test-method> <!-- getspecificIddetails -->
-      </class> <!-- herokuapp.getSpecificIdDetails -->
+        </test-method> <!-- deleteBookingIdTest -->
+      </class> <!-- herokuapp.deleteBookingId -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

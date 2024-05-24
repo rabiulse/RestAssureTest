@@ -5,19 +5,17 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import rabiul.test.resassure.baseTest;
 
-public class getSpecificIdDetails {
+public class CreateBooking extends baseTest {
 
 	@Test
-	public void getspecificIddetails() {
-		Response response = RestAssured
-				.get("https://restful-booker.herokuapp.com/booking/569");
-		Reporter.log("Get resposne suucessfully:");
-		response.print();
+	public void createbookingTest() {
 
-		// validate response code
+		Response response = createBooking();
+
+		// verification:
 
 		int responsecode = response.statusCode();
 
@@ -28,9 +26,10 @@ public class getSpecificIdDetails {
 
 		// validate first name
 
-		String firstname = response.jsonPath().get("firstname").toString();
+		String firstname = response.jsonPath().get("booking.firstname")
+				.toString();
 		// validate last name
-		String lastname = response.jsonPath().getString("lastname");
+		String lastname = response.jsonPath().getString("booking.lastname");
 		Reporter.log("firstname:" + firstname);
 		Reporter.log("firstname:" + lastname);
 		SoftAssert softassert = new SoftAssert();
