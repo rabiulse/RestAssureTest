@@ -26,21 +26,30 @@ public class deleteBookingId extends baseTest {
 
 		int getbookingId = responseCreate.jsonPath().getInt("bookingid");
 
-		Response responsedelete = RestAssured.given().auth().preemptive()
+		Response responsedelete = RestAssured.given(spec).auth().preemptive()
 				.basic("admin", "password123")
-				.delete("https://restful-booker.herokuapp.com/booking/"
-						+ getbookingId);
+				.delete("/booking/" + getbookingId);
 		responsedelete.print();
 
-		int responsecodedelete = responsedelete.statusCode();
+		int responsecodedelete = responsedelete.getStatusCode();
 		System.out.println("Delete  resposne code:" + responsecodedelete);
-		String statusline = responsedelete.statusLine();
+		String statusline = responsedelete.getStatusLine();
 
 		System.out.println("status line :" + statusline);
 
 		Reporter.log("Delete  resposne code:" + responsedelete);
 
 		Reporter.log("statusline:" + statusline);
+
+		// Now run the get request to see the correct status:
+
+		Response getresponse = RestAssured.get(
+				"https://restful-booker.herokuapp.com/booking/" + getbookingId);
+		Reporter.log("Get resposne suucessfully:");
+		getresponse.print();
+
+		Reporter.log("getStatusCode :" + getresponse.getStatusCode());
+		Reporter.log("getStatusLine :" + getresponse.getStatusLine());
 
 	}
 

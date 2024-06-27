@@ -13,7 +13,7 @@ public class getSpecificIdDetails {
 	@Test
 	public void getspecificIddetails() {
 		Response response = RestAssured
-				.get("https://restful-booker.herokuapp.com/booking/569");
+				.get("https://restful-booker.herokuapp.com/booking/220");
 		Reporter.log("Get resposne suucessfully:");
 		response.print();
 
@@ -29,8 +29,10 @@ public class getSpecificIdDetails {
 		// validate first name
 
 		String firstname = response.jsonPath().get("firstname").toString();
+
 		// validate last name
 		String lastname = response.jsonPath().getString("lastname");
+
 		Reporter.log("firstname:" + firstname);
 		Reporter.log("firstname:" + lastname);
 		SoftAssert softassert = new SoftAssert();

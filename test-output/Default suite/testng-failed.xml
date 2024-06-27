@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="herokuapp.partialUpdateBooking">
+      <class name="herokuapp.CreateBookingWithPogo">
         <methods>
-          <include name="updatebookingTest"/>
+          <include name="setup"/>
+          <include name="createBookingWithPOJOTest"/>
         </methods>
-      </class> <!-- herokuapp.partialUpdateBooking -->
+      </class> <!-- herokuapp.CreateBookingWithPogo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
